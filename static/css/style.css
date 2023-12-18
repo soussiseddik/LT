@@ -1,0 +1,194 @@
+
+
+@media (min-width: 992px) {
+    body {
+        font-size: 18px;
+        background-image: url('../images/bck-lg-.jpg');
+    }
+    .list-group-flush > .list-group-item {
+        margin-block: 15px;
+    }
+    .infoCarousel {
+        width: 45%;
+        margin: auto auto 35px auto;
+    }
+    .container {
+        min-height: 75.5vh;
+    }
+    .container > .infoCarousel {
+        width: 28%;
+    }
+    ::placeholder {
+        color: #506274;
+    }
+    form[role="search"] {
+        margin-left: 9rem;
+    }
+    .on_search { 
+    margin-left: 23vh;
+    margin-top: 1vh;
+    }
+    .on_search > .btn {
+        width: 7vh;
+        height: 7vh;
+        line-height: 5vh;
+    }
+    .infoProd > p {
+        width: 40%;
+        padding-top: 4vh;
+    }
+    .card{
+        width: 14rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 16px;
+        background-image: url('../images/bck-md-.jpg');
+        background-size: cover;
+    }
+    
+    .container {
+        margin-top: 3vh;
+        padding-top: 6vh;
+    }
+    ::placeholder {
+        color: #506274;
+    }
+    form[role="search"] {
+        margin-left: 5rem;
+    }
+    
+}
+  
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+        background-image: url('../images/bck-sm-.png');
+    }
+    .list-group-flush > .list-group-item {
+        margin-block: 20px;
+    }
+    .infoCarousel {
+        width: 89%;
+        margin: auto auto 35px auto;
+    }
+    ::placeholder {
+        color: #718497;
+    }
+    .container {
+        min-height: 75vh;
+    }
+    form[role="search"] {
+        margin-left: 3rem;
+    }
+    .on_search { 
+        margin-left: 7vh;
+        margin-top: 2vh;
+    }
+    .on_search > .btn {
+        width: 7vh;
+        height: 4vh;
+    }
+    .infoProd > p {
+        padding-top: 4vh;
+    }.card{
+        width: 17rem;
+    }
+}
+
+body {
+    background-attachment: fixed;
+}
+
+
+
+.inFocus:focus {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+.meanColor {
+    background: radial-gradient(red, black);
+}
+
+input {
+    color: white;
+    border: none;
+    background: transparent;
+}
+input:focus {
+    outline: none;
+}
+.form-group {
+    border-bottom: 3px #77975e solid;
+    transition: all .3s;
+}
+
+
+form svg {
+    color: #77975e;
+    transition: all .3s;
+}
+.modal svg {
+    color: #506274;
+    transition: all .1s;
+}
+.modal svg:hover {
+    color: white;
+}
+.nav-item .nav-link {
+    color: #77975e;
+    transition: all .3s;
+}
+.nav-item .nav-link:hover {
+    color: #a6f06c;
+}
+.submit > input {
+    background-color: #77975e; 
+    transition: all .3s;
+}
+
+
+.submit a:hover {
+    text-decoration: underline;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(14, 227, 28, 0.25);
+    transform: scale(1.1);
+  }
+
+.card {
+    box-shadow: #000000db 0px 8px 7px 6px;
+}
+
+.navbar-brand {
+    margin-right: 0;
+}
+.card {
+    transition: all .3s;
+    background-color: #122229a1;
+}
+.card:hover {
+    transform: scale(1.07);
+    background-color: #18547799;
+}
+.on_search > .btn {
+    background: #184c7b;
+    transition: all .3s;
+} 
+.on_search > .btn:hover {
+    background: #3571a7;
+} 
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.search-bar > .navbar {
+    position: relative;
+}

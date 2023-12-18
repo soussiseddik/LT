@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}
+ {{ category }}
+{% endblock %}
+
+    {% block PH_link %}
+        {% if category == 'phones' %}
+            active
+        {% endif %}
+    {% endblock %}
+    {% block C_link %}
+        {% if category == 'computers' %}
+            active
+        {% endif %}
+    {% endblock %}
+    {% block P_link %}
+        {% if category == 'games' %}
+            active
+        {% endif %}
+    {% endblock %}
+    {% block H_link %}
+        {% if category == 'headphones' %}
+            active
+        {% endif %}
+    {% endblock %}
+    {% block S_link %}
+        {% if category == 'soundcards' %}
+            active
+        {% endif %}
+    {% endblock %}
+    {% block M_link %}
+        {% if category == 'microphones' %}
+            active
+        {% endif %}
+    {% endblock %}
+
+
+{% block content %}
+<div class="container" style="margin-left: auto;">
+    {% include 'product_list.html' %}
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block I_nav_icon_color %}
+    style="color: #a6f06c;"
+{% endblock %}
+
+{% block content %}
+    <div class="search-bar">
+        <div class="navbar bg-dark" style="border-top: 1px black solid;">
+            <form method="GET" class="d-flex mt-1 col-lg-3 col-9" role="search">
+                
+                <input class="form-control me-2 inpt inFocus" type="search" placeholder="Search" aria-label="Search" name="Search" onkeyup="submit_active()">
+                <div class="submit">
+                    <input class="btn" value="search" type="submit" style="margin-left: 5vh;" disabled>
+                </div>
+            </form>
+        </div>
+    </div>
+    {% if on_search %}
+        <div class="on_search">
+            <a class="btn text-light" type="submit" style="border-radius: 50%; box-shadow: #000000db 0px 8px 7px 6px; " href="{% url 'index' %}"><strong>All</strong></a>
+        </div>
+    {% endif %}
+    <div class="container" style="margin-left: auto;">
+        {% include 'product_list.html' %}
+    </div>
+{% endblock %}

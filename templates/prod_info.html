@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+ {{ prod.name }}
+{% endblock %}
+
+{% block content %}
+<div class="container infoProd">
+    <h2 style="text-align: center; margin-block: 4vh;text-align: center; margin-block: 4vh;font-family: math;color: #378335;;">{{prod.name}}</h2>
+    <div class="row">
+    <div class="infoCarousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{{ prod.image.url }}" class="d-block w-100" alt="prod image" style="height: 291px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{{ prod.info_image1.url }}" class="d-block w-100" alt="..." style="height: 291px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{{ prod.info_image2.url }}" class="d-block w-100" alt="..." style="height: 291px;">
+              </div>
+            </div>
+            <button style="background-color: #48b345;" class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
+            </button>
+            <button style="background-color: #48b345;" class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
+            </button>
+          </div>
+    </div>
+    <table class="table col-12" style="width: 350px;">
+      {% for caracter in caracters %}
+        <tr>
+          <th scope="row">{{ caracter.i }}</th>
+          <td>{{ caracter.c }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+{% endblock %}
